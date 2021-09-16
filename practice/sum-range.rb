@@ -17,5 +17,5 @@ def sum_range_recursive(upto, total = 0)
   end
 end
 
-sum_range_iterative(100)
-puts "Sum of Interval 1 to 100 using Recursion is: #{sum_range_recursive(100)}"
+sum_range_iterative(10_000)
+puts "Sum of Interval 1 to 10000 using Recursion is: #{sum_range_recursive(10_000)}"
