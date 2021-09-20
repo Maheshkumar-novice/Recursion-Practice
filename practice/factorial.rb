@@ -15,6 +15,11 @@ def factorial_recursive(upto)
   upto * factorial_recursive(upto - 1)
 end
 
-factorial_iterative(100)
-puts "Factorial Recursive from 1 to 100 is: #{factorial_recursive(100)
-                                            }"
+factorial_iterative(10)
+puts "Factorial Recursive from 1 to 100 is: #{factorial_recursive(10)}"
+
+def u_version(number, accumulator)
+  number <= 0 ? accumulator : u_version(number - 1, number * accumulator)
+end
+
+puts "U Version: #{u_version(10, 1)}"
