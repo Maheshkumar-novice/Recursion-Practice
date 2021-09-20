@@ -1,0 +1,40 @@
+Understanding:
+	Merge Sort is a sorting algorithm with divide and conquer techniqute where splite the original array into smaller ones until we get the single element array then we sort and merge them together to get the whole sorted array. This uses recursion. It has a complexity of time of O(nlogn) as we use n steps max to compare and combine for each logn splits. So the algorithms is simple we get the original array if it of length of 1 we simply return it else we first recursively split and sort the left half and recursively split and sort the right half then merge both halves to get the sorted array. 
+
+Plan:
+ Input: array of length n
+ Output: array of length n sorted in ascending order
+ Algorithm as PseudoCode:
+	* Get the n length array
+	* Merge Sort(array)
+		return if array.length is 1
+		otherwise
+			Merge Sort(left half)
+			Merge Sort(right half)
+			return Merge(left half, right half)
+	* Merge(left half, right half)
+		new_array = Array.new((left_half.length + right_half.length))
+		left_index, right_index, new_array_index = 0
+		while left_index <= left_half.length and right_index <= right_half.length
+			if (left_half[left_index] < right_half[right_index])
+				new_array[new_array_index] = left_half[left_index]
+				left_index++
+			else
+				new_array[new_array_index] = right_half[right_index]
+				right_index++
+			done
+			new_array_index++
+		done
+		if left_array.empty?
+			new_array += right_half
+		else
+			new_array += left_half
+		done
+		return new_array
+
+Divide And Conquer:
+	=> Get Array
+	=> Create Base Case
+	=> Implement Merge Sort
+	=> Implement Merge
+	=> Test Whole
