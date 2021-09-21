@@ -3,36 +3,36 @@
 
 # rubocop:disable Metrics/MethodLength, Metrics/AbcSize
 
-def merge(left_half, right_half, new_array)
+def merge(left_half, right_half, array)
   left_index = 0
   right_index = 0
-  new_array_index = 0
+  array_index = 0
   left_max_index = left_half.length - 1
   right_max_index = right_half.length - 1
 
   while left_index <= left_max_index && right_index <= right_max_index
     if left_half[left_index] < right_half[right_index]
-      new_array[new_array_index] = left_half[left_index]
+      array[array_index] = left_half[left_index]
       left_index += 1
     else
-      new_array[new_array_index] = right_half[right_index]
+      array[array_index] = right_half[right_index]
       right_index += 1
     end
-    new_array_index += 1
+    array_index += 1
   end
 
   while right_index <= right_max_index
-    new_array[new_array_index] = right_half[right_index]
+    array[array_index] = right_half[right_index]
     right_index += 1
-    new_array_index += 1
+    array_index += 1
   end
 
   while left_index <= left_max_index
-    new_array[new_array_index] = left_half[left_index]
+    array[array_index] = left_half[left_index]
     left_index += 1
-    new_array_index += 1
+    array_index += 1
   end
-  new_array
+  array
 end
 
 def merge_sort(array)
