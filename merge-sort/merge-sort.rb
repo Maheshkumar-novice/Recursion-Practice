@@ -37,7 +37,7 @@ end
 def call_merge_sort
   array = rand(1..10).times.map { rand(200) }
   puts "Before Merge Sort: #{array}"
-  puts "After Merge Sort: #{merge_sort(array)}"
+  puts "After Merge Sort:  #{merge_sort(array)}"
   puts
 end
 
