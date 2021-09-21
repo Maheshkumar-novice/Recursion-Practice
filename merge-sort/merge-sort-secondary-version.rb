@@ -36,10 +36,13 @@ def merge(left_half, right_half, array)
 end
 
 def merge_sort(array)
-  return if array.length == 1
+  return array if array.length == 1
 
-  left_half = array[0, array.length / 2]
-  right_half = array[(array.length / 2)..-1]
+  mid_index = array.length / 2
+  end_index = array.length - 1
+
+  left_half = array[0..mid_index - 1]
+  right_half = array[mid_index..end_index]
 
   merge_sort(left_half)
   merge_sort(right_half)
