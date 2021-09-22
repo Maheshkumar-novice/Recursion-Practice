@@ -1,5 +1,5 @@
 
-# [Recursion](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-programming/lessons/recursion)
+# [Recursion-Projects](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-programming/lessons/recursion)
 
 <details open="open">
   <summary>Table Of Contents</summary>
@@ -32,5 +32,5 @@
 ## Acknowledgements
 * [The Odin Project](https://theodinproject.com)
 
-[Move To Top](#Recursion)
+[Move To Top](#recursion-projects)
 
