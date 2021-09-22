@@ -20,8 +20,8 @@
 </details>
 
 ## Description
-  Recursion - A function calls itself.
-  Key Terms: Base Case, Recursive Process.
+  **Recursion** - A function calls itself.<br/>
+  **Key Terms** - Base Case, Recursive Process.<br/>
   This repo contains my recursion projects and practice programs on recursion. Important ones include the fibonacci program and the merge sort program.
 
 ## Built With
